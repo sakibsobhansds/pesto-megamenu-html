@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="mobile-menu-btn">
+    <div id="mobile-menu-btn-trigger">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M3.75 9H20.25M3.75 15.75H20.25" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>  
@@ -19,7 +19,7 @@
         <div class="large-container">
             <div class="nav-menu-inner">
                 <div id="main-menu-overlay" class="main-menu-overlay">
-                   
+                   <div id="main-menu-overlay-bg" class="main-menu-overlay-bg"></div>
                     <div class="main-menu-overlay-inner">
 
                         <div class="mobile-menu-top">
@@ -32,7 +32,7 @@
                         </div>
                         
                         <ul class="menu-items">
-                            <li class="dropdown-item">
+                            <li class="dropdown-item collapsible-dropdown">
                                 <a href="#">
                                     Home 
                                     <div class="icon">
@@ -45,7 +45,7 @@
                                     </div>
                                 </a>
                                 <ul>
-                                    <li class="dropdown-item">
+                                    <li class="dropdown-item collapsible-dropdown">
                                         <a href="#">
                                             Second Level
                                             <div class="icon">
@@ -68,16 +68,139 @@
                                     <li><a href="#">Item 4</a></li>
                                 </ul>
                             </li>
-                            <li class="has-mega-menu">
-                                <a href="#">Categories</a> 
-                                <div class="mega-menu">
-                                    <div class="large-container">
-
-                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, doloremque.</p>
+                            <li class="has-mega-menu collapsible-dropdown">
+                                <a href="#">
+                                    Categories
+                                    <div class="icon">
+                                        <svg class="desktop-arrow" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13.25 0.875L7 7.125L0.75 0.875" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg> 
+                                        <svg class="mobile-arrow" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.875 0.75L7.125 7L0.875 13.25" stroke="black" stroke-width="1.1875" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                                                               
                                     </div>
-                                </div>
+                                </a> 
+                                <ul class="mega-menu style-two">
+                                    <div class="large-container">
+                                        <div class="mega-menu-inner">
+                                            <div class="category-menu-item-slider">
+                                                <div class="slide-item">
+                                                    <a class="slide-item-inner" href="#">
+                                                        <div class="item-thumb">
+                                                            <img src="https://placehold.co/350x400/ddd/FFFFFF/png" alt="">
+                                                        </div>
+                                                        <div class="item-info">
+                                                            <p>(33 Items)</p>
+                                                            <h4>Face Wash</h4>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="slide-item">
+                                                    <a class="slide-item-inner" href="#">
+                                                        <div class="item-thumb">
+                                                            <img src="https://placehold.co/350x400/ddd/FFFFFF/png" alt="">
+                                                        </div>
+                                                        <div class="item-info">
+                                                            <p>(33 Items)</p>
+                                                            <h4>Face Wash</h4>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="slide-item">
+                                                    <a class="slide-item-inner" href="#">
+                                                        <div class="item-thumb">
+                                                            <img src="https://placehold.co/350x400/ddd/FFFFFF/png" alt="">
+                                                        </div>
+                                                        <div class="item-info">
+                                                            <p>(33 Items)</p>
+                                                            <h4>Face Wash</h4>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="slide-item">
+                                                    <a class="slide-item-inner" href="#">
+                                                        <div class="item-thumb">
+                                                            <img src="https://placehold.co/350x400/ddd/FFFFFF/png" alt="">
+                                                        </div>
+                                                        <div class="item-info">
+                                                            <p>(33 Items)</p>
+                                                            <h4>Face Wash</h4>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="bottom-btn">
+                                                <h4 >View All Collection</h4>
+                                                <span>
+                                                    <svg width="43" height="28" viewBox="0 0 43 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M28.9375 26.1875L41.125 14M41.125 14L28.9375 1.8125M41.125 14H1.875" stroke="black" stroke-width="2.4375" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>                                                        
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </ul>
                             </li>
-                            <li><a href="#">Pages</a></li>
+                            <li class="has-mega-menu collapsible-dropdown">
+                                <a href="#">
+                                    Pages
+                                    <div class="icon">
+                                        <svg class="desktop-arrow" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13.25 0.875L7 7.125L0.75 0.875" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg> 
+                                        <svg class="mobile-arrow" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.875 0.75L7.125 7L0.875 13.25" stroke="black" stroke-width="1.1875" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                                                               
+                                    </div>
+                                </a> 
+                                <ul class="mega-menu style-one">
+                                    <div class="large-container">
+                                        <div class="mega-menu-inner">
+                                            <div class="menu-list">
+                                                <ul>
+                                                    <li><a href="#">Testimonials</a></li>
+                                                    <li><a href="#">Best Saler Shop </a></li>
+                                                    <li><a href="#">Gallery</a></li>
+                                                    <li><a href="#">Faq’s</a></li>
+                                                    <li><a href="#">404 Page</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="selected-product">
+                                                <a href="#" class="product-card-single card-width">
+                                                    <div class="card-single-thumb no-white-space">
+                                                        <img src="https://placehold.co/352x509/000000/FFFFFF/png" alt="">
+                                                    </div>
+                                                    <h4>Clariss Face Wash Papaya</h4>
+                                                    <p><span>$105.00</span><del>$200.00</del></p>
+                                                </a>
+                                                <a href="#" class="product-card-single card-width">
+                                                    <div class="card-single-thumb no-white-space">
+                                                        <img src="https://placehold.co/352x509/000000/FFFFFF/png" alt="">
+                                                    </div>
+                                                    <h4>Clariss Face Wash Papaya</h4>
+                                                    <p><span>$105.00</span><del>$200.00</del></p>
+                                                </a>
+                                            </div>
+                                            <div class="menu-add-banner">
+                                                <a class="menu-add-banner-inner card-width" href="#">
+                                                    <div class="bg-image no-white-space">
+                                                        <img src="https://placehold.co/352x509/ddd/FFFFFF/png" alt="">
+                                                    </div>
+                                                    <div class="banner-content">
+                                                        <h4>Summer-Ready Savings</h4>
+                                                        <span>Shop Collection 
+                                                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M0.625 9.375L9.375 0.625L0.625 9.375ZM9.375 0.625H2.8125H9.375ZM9.375 0.625V7.1875V0.625Z" fill="#121212"/>
+                                                            <path d="M0.625 9.375L9.375 0.625M9.375 0.625H2.8125M9.375 0.625V7.1875" stroke="#121212" stroke-width="0.875" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </li>
                             <li><a href="#">About Us</a></li>
                             <li><a href="#">Blog</a></li>
                             <li><a href="#">Contact</a></li>
@@ -125,6 +248,7 @@
             </div>
         </div>
     </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quis dolorum itaque deserunt, sapiente veniam harum quaerat, eum obcaecati soluta provident, laudantium debitis. Veritatis dolorum mollitia laudantium pariatur dolor tempore cum sequi animi nesciunt ad quaerat dolorem illo eum dolore neque, asperiores ea? Laborum sapiente exercitationem omnis. Hic, deleniti veritatis reprehenderit esse quia sint amet doloribus iste assumenda illo quibusdam nemo molestias error dicta vero! Quas dolores saepe fugit, nam dicta sequi quasi voluptatem odio quia aspernatur natus ullam, dolor a, soluta autem sapiente hic nemo neque in quidem nobis maxime excepturi! Maxime consectetur harum explicabo voluptatem, eos labore delectus nihil vero quia laudantium, tempora sint eius? Deleniti doloremque necessitatibus, quae unde a soluta distinctio quis odit dolor possimus odio in numquam animi enim ipsum itaque minus quibusdam eveniet adipisci molestias illo? Reiciendis quos neque modi commodi magnam maiores? Placeat voluptate repudiandae, id illum nesciunt atque nobis, sed est excepturi delectus dignissimos eos vel animi totam obcaecati ut aliquam. Odit ab, fugiat numquam natus deserunt aliquam ipsum tempora. Tempore dolor dolore facere voluptates consequatur porro inventore, accusantium a repellendus iusto sequi omnis, ut distinctio aut maiores fugiat suscipit nostrum ex, id est dolorem dolorum temporibus dicta. Soluta, rerum numquam. At, modi! Quam voluptatem ea, ipsa praesentium optio placeat ut voluptas facilis maxime quasi inventore nulla eos commodi ipsam dolorum, magnam odit at quidem? Unde possimus, corporis fuga aliquid voluptatum, aperiam sapiente voluptatibus sed deleniti nisi distinctio accusantium. Iste suscipit, natus amet veritatis accusantium a vitae maiores eaque vero ab dicta dignissimos numquam. Libero minima commodi modi, sequi ab dolores error beatae cupiditate harum aperiam placeat magni esse qui recusandae accusantium debitis dignissimos aliquid enim officiis! Nulla iusto laborum, beatae quod tempore nemo accusantium, iste, id unde excepturi veniam. Aspernatur vitae temporibus perferendis dignissimos velit omnis! Obcaecati quasi, eos vero nulla pariatur nihil ratione corrupti commodi dignissimos, neque id nemo adipisci aut dolorem quas. Enim aperiam soluta, possimus incidunt est nulla sequi iure officia quam, recusandae praesentium fugiat sint nam magnam natus? Ex similique quas repudiandae, sint ipsum officia, quisquam impedit modi quia maiores aperiam numquam tempore cumque quos, aut a magnam qui porro deserunt voluptatum necessitatibus aspernatur! Pariatur quasi dolorum ad repellat, asperiores exercitationem rerum velit eligendi earum nesciunt placeat, amet iste unde tempora voluptatem labore, veritatis saepe sunt. Doloremque neque magni labore, laudantium modi impedit nulla dolores vitae dicta, illum sapiente ut voluptatem voluptates! Amet sequi, exercitationem excepturi quo necessitatibus eligendi laborum delectus dolor ipsam nam ratione, beatae vel laudantium natus incidunt libero quos modi explicabo aperiam dicta a deserunt. Quibusdam, repellendus, commodi quasi est, obcaecati nesciunt odio pariatur quo culpa deleniti ipsam unde similique ut modi dolor? Dicta sint ratione accusantium maxime praesentium dignissimos aspernatur repellendus nisi quisquam nesciunt. Esse minus mollitia sit cumque laboriosam. Consequuntur cumque qui aut unde nulla, officia tempore eius suscipit dignissimos magni ipsam quia laboriosam debitis fugit adipisci voluptates eveniet asperiores non ullam eos corrupti minus placeat! Voluptates excepturi, quos similique reiciendis atque ullam itaque dolorum? Consequuntur ipsam dignissimos, harum dicta illo amet.</p>
 
 
 
